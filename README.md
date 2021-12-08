@@ -5,7 +5,9 @@
 </div>
 
 <div align="center">
-
+# Fork
+Add $model param to applyConditions methods in WhereConditions    
+               
 # Lighthouse
 
 [![Continuous Integration](https://github.com/nuwave/lighthouse/workflows/Continuous%20Integration/badge.svg)](https://github.com/nuwave/lighthouse/actions)
