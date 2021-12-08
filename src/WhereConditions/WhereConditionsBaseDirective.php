@@ -85,7 +85,7 @@ abstract class WhereConditionsBaseDirective extends BaseDirective implements Arg
         if ($column = $whereConditions['column'] ?? null) {
             static::assertValidColumnReference($column);
 
-            return $this->operator->applyConditions($builder, $whereConditions, $boolean);
+            return $this->operator->applyConditions($builder, $whereConditions, $boolean, $model);
         }
 
         return $builder;

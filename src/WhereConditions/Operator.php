@@ -2,6 +2,8 @@
 
 namespace Nuwave\Lighthouse\WhereConditions;
 
+use Illuminate\Database\Eloquent\Model;
+
 /**
  * An Operator handles the database or application specific bits
  * of applying WHERE conditions to a database query builder.
@@ -35,5 +37,5 @@ interface Operator
      *
      * @return \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder
      */
-    public function applyConditions($builder, array $whereConditions, string $boolean);
+    public function applyConditions($builder, array $whereConditions, string $boolean, Model $model);
 }
