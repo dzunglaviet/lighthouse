@@ -236,4 +236,9 @@ class ArgumentSet
     {
         return array_merge($this->arguments, $this->undefined);
     }
+
+    //Add by dzunglaviet: allow custom directive can use whereConditions, like solr query
+    public function remove($key) {
+        unset($this->arguments[$key]);
+    }
 }
